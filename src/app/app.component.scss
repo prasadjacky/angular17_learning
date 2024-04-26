@@ -1,6 +1,12 @@
 .country-records{
     padding: 16px;
-}
-.record-table {
-    border: 1px solid whitesmoke;
+    margin-left: 60px;
+
+    &__record-table {
+        border: 1px solid whitesmoke;
+    }
+
+    &.sidebarExpanded {
+        margin-left: 250px;
+    }
 }
