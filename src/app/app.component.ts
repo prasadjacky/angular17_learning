@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { RouterModule } from '@angular/router';
-
+import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+ModuleRegistry.registerModules([AllCommunityModule]);
 @Component({
   selector: 'rise-root',
   standalone: true,

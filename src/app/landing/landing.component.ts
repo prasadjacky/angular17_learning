@@ -21,7 +21,7 @@ export class LandingComponent implements OnInit {
     this.filter = this.fb.control("", { nonNullable: true });
   }
   ngOnInit(): void {
-    this.http.get("http://localhost:8080/api/common/getAllUsecases", { withCredentials: true }).subscribe(res => {
+    this.http.get("https://rise-scheduler.mrshmc.com/api/common/getAllUsecases", { withCredentials: true }).subscribe(res => {
       this.usecases = res as any
       console.log(this.usecases);
     }, err => {
@@ -30,7 +30,7 @@ export class LandingComponent implements OnInit {
   }
   callPost(event: any) {
     console.log(event)
-    // this.http.get("http://localhost:8080/api/common/getAllUsecases",{ withCredentials: true }).subscribe(res => {      
+    // this.http.get("https://rise-scheduler.mrshmc.com/api/common/getAllUsecases",{ withCredentials: true }).subscribe(res => {      
     //   this.usecases = res as any
     //   console.log(this.usecases);
     // },err => {

@@ -1,8 +1,11 @@
 <h1>Usecases</h1>
-<ag-grid-angular 
-    class="ag-theme-alpine"
-    (gridReady)="onGridReady($event)"
-    [rowData]="apiResponse"
-    [columnDefs]="coulmnDefs"
-    style="height: 800px; width: 100%;">
-</ag-grid-angular>
+<div style="flex: 1 1 0%">
+    <ag-grid-angular 
+        style="height: 100%;"
+        theme="theme"
+        (gridReady)="onGridReady($event)"
+        [rowData]="apiResponse"
+        [columnDefs]="coulmnDefs"
+        [sideBar]="true">
+    </ag-grid-angular>
+</div>

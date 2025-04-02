@@ -1,4 +1,4 @@
 <rise-side-bar [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></rise-side-bar>
-<div class="country-records" [ngClass]="{'sidebarExpanded': sidebarExpanded}">
+<div class="rise-main" [ngClass]="{'sidebarExpanded': sidebarExpanded}">
   <router-outlet></router-outlet>
 </div>
